@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.StartPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/beverageImage"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/beverage"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:id="@+id/beverageName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="T.아메리카노"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/body"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:id="@+id/beverageCost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6,300원"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/body"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"/>
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <Button
+                            android:id="@+id/minusBtn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/minus"
+                            android:scaleType="fitCenter"
+                            app:layout_constraintEnd_toStartOf="@+id/beverageCount"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/beverageCount"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/beveragecount"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="30sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/plusBtn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/plus"
+                            android:scaleType="fitCenter"
+                            app:layout_constraintStart_toEndOf="@+id/beverageCount"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/temp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/head"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <Button
+                            android:id="@+id/icebeverageBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/temp_ice"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/body"
+                            android:layout_weight="1"
+                            android:background="@drawable/mainbtn"/>
+
+                        <Button
+                            android:id="@+id/hotbeverageBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/temp_hot"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/body"
+                            android:layout_weight="1"
+                            android:background="@drawable/mainbtn"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/size"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/head"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <Button
+                            android:id="@+id/regularBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/mainbtn"
+                            android:fontFamily="@font/body"
+                            android:text="@string/size_regular"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/largeBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/size_large"
+                            android:fontFamily="@font/body"
+                            android:layout_weight="1"
+                            android:background="@drawable/mainbtn"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/maxBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/size_max"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/body"
+                            android:layout_weight="1"
+                            android:background="@drawable/mainbtn"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/get"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/head"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="10dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+                        <Button
+                            android:id="@+id/takeOutBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/get_takeout"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/body"
+                            android:layout_weight="1"
+                            android:background="@drawable/mainbtn"/>
+
+                        <Button
+                            android:id="@+id/hollBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/get_holl"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/body"
+                            android:layout_weight="1"
+                            android:background="@drawable/mainbtn"/>
+                    </LinearLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/head"
+                            android:text="@string/custom"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/toppingBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/mainbtn"
+                            android:text="@string/select"
+                            android:fontFamily="@font/body"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:weightSum="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:text="6,300원"
+            android:fontFamily="@font/body"
+            android:textColor="@color/white"
+            android:background="@drawable/paybtn"
+            android:gravity="center_vertical|center" />
+
+        <Button
+            android:id="@+id/payBtn"
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="match_parent"
+            android:background="@drawable/paybtn"
+            android:fontFamily="@font/body"
+            android:text="@string/putBasket"
+            android:textColor="#ff0000"
+            android:textSize="25sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+

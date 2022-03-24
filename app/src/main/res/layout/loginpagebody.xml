@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/accountPageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/minsansblack"
+                    android:text="EDIYA COFFEE"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/ideditText"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/ediya_white"
+                    android:fontFamily="@font/minsansblack"
+                    android:hint="@string/login_text_id"
+                    android:textColorHint="@color/ediya_white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+                <EditText
+                    android:id="@+id/pwEditText"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/ediya_white"
+                    android:fontFamily="@font/minsansblack"
+                    android:hint="@string/login_text_pw"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/ediya_white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.504"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ideditText" />
+
+                <Button
+                    android:id="@+id/Pwshow"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/showpassword"
+                    android:scaleType="centerInside"
+                    app:layout_constraintBottom_toBottomOf="@+id/pwEditText"
+                    app:layout_constraintEnd_toEndOf="@+id/pwEditText"
+                    app:layout_constraintTop_toBottomOf="@+id/ideditText" />
+
+                <Button
+                    android:id="@+id/loginBtn"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/loginbtn"
+                    android:text="@string/login"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pwEditText" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/loginBtn">
+
+                    <Button
+                        android:id="@+id/findId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:background="#0000"
+                        android:text="@string/find_id"
+                        android:textColor="#a9a9a9" />
+
+                    <Button
+                        android:id="@+id/findPW"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="#0000"
+                        android:text="@string/find_pw"
+                        android:textColor="#a9a9a9" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/signUpBtn"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/signupbtn"
+                    android:text="@string/signup"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+                <RadioGroup
+                    android:id="@+id/languageRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    app:layout_constraintTop_toBottomOf="@+id/signUpBtn">
+
+                    <RadioButton
+                        android:id="@+id/koreanSelectBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_weight="4"
+                        android:background="@drawable/radio_button"
+                        android:button="@null"
+                        android:text="한국어"
+                        android:textAlignment="center" />
+
+                    <RadioButton
+                        android:id="@+id/EnglishSelectBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_weight="4"
+                        android:background="@drawable/radio_button"
+                        android:button="@null"
+                        android:text="English"
+                        android:textAlignment="center" />
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/brightModeRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    app:layout_constraintTop_toBottomOf="@+id/languageRadioGroup">
+
+                    <RadioButton
+                        android:id="@+id/whiteModeSelectBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_weight="4"
+                        android:background="@drawable/radio_button"
+                        android:button="@null"
+                        android:text="라이트 모드(Light Mode)"
+                        android:textAlignment="center" />
+
+                    <RadioButton
+                        android:id="@+id/DarkModeSelectBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_weight="4"
+                        android:background="@drawable/radio_button"
+                        android:button="@null"
+                        android:text="다크 모드(Dark Mode)"
+                        android:textAlignment="center" />
+
+                </RadioGroup>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+

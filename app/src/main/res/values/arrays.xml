@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="coffeeList">
+        <item>아메리카노</item>
+        <item>아인슈페너</item>
+        <item>콜드브루</item>
+        <item>카페라떼</item>
+        <item>화이트비엔나</item>
+        <item>콜드브루 니트로</item>
+        <item>카페모카</item>
+        <item>카푸치노</item>
+    </string-array>
+
+    <integer-array name="coffeeCost">
+        <item>3200</item>
+        <item>3800</item>
+        <item>3800</item>
+        <item>3700</item>
+        <item>4000</item>
+        <item>3900</item>
+        <item>3900</item>
+        <item>3700</item>
+    </integer-array>
+
+    <string-array name="hotMenu">
+        <item>아메리카노</item>
+        <item>아인슈페너</item>
+        <item>ICED 딸기라떼</item>
+        <item>ICED 생딸기 연유 플랫치노</item>
+        <item>ICED 생딸기 피치 히비스커스</item>
+    </string-array>
+
+    <integer-array name="hotMenuCost">
+        <item>3200</item>
+        <item>3800</item>
+        <item>5800</item>
+        <item>5400</item>
+        <item>5800</item>
+    </integer-array>
+
+    <string-array name="newMenu">
+        <item>ICED 딸기라떼</item>
+        <item>ICED 생딸기 연유 플랫치노</item>
+        <item>HOT 생딸기 피치 히비스커스</item>
+        <item>ICED 생딸기 피치 히비스커스</item>
+    </string-array>
+
+    <integer-array name="newMenuCost">
+        <item>5000</item>
+        <item>5800</item>
+        <item>5400</item>
+        <item>5800</item>
+    </integer-array>
+
+    <string-array name="flatccino">
+        <item>커피플랫치노</item>
+        <item>꿀복숭아플랫치노</item>
+        <item>딸기요거트플랫치노</item>
+        <item>토피넛플랫치노</item>
+        <item>생딸기플랫치노</item>
+    </string-array>
+
+    <integer-array name="flatccinoCost">
+        <item>3800</item>
+        <item>3800</item>
+        <item>3800</item>
+        <item>3800</item>
+        <item>4800</item>
+    </integer-array>
+
+    <string-array name="shakeade">
+        <item>복숭아에이드</item>
+        <item>자몽에이드</item>
+        <item>레몬에이드</item>
+        <item>오리진쉐이크</item>
+        <item>오레오초코쉐이크</item>
+    </string-array>
+
+    <integer-array name="shakeadeCost">
+        <item>2500</item>
+        <item>2500</item>
+        <item>2500</item>
+        <item>3500</item>
+        <item>3500</item>
+    </integer-array>
+</resources>

@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">Kiosk</string>
+    <string name="category_new">NEW</string>
+    <string name="category_coffee">커피</string>
+    <string name="category_flatccino">플랫치노</string>
+    <string name="category_shakeade">쉐이크\u0026에이드</string>
+    <string name="login">로그인</string>
+    <string name="find_id">아이디 찾기</string>
+    <string name="find_pw">비밀번호 찾기</string>
+    <string name="signup">회원가입</string>
+    <string name="login_text_id">아이디 입력</string>
+    <string name="login_text_pw">비밀번호 입력</string>
+    <string name="basket">장바구니</string>
+    <string name="basket_history">주문 내역</string>
+    <string name="payBtn">결제하기</string>
+    <string name="temp">온도</string>
+    <string name="temp_ice">아이스</string>
+    <string name="temp_hot">핫</string>
+    <string name="size">사이즈</string>
+    <string name="size_regular">레귤러</string>
+    <string name="size_large">라지</string>
+    <string name="size_max">맥스</string>
+    <string name="get">수령방식</string>
+    <string name="get_takeout">포장</string>
+    <string name="get_holl">매장</string>
+    <string name="custom">커스텀 추가</string>
+    <string name="select">선택</string>
+    <string name="putBasket">장바구니에 담기</string>
+    <string name="endMent">주문이 완료되었습니다 이용해주셔서 감사합니다.</string>
+    <string name="showTime">예상 대기시간 : 10분 내외</string>
+    <string name="totalCost">총 결제 금액</string>
+    <string name="payment">결제수단</string>
+    <string name="receipt">영수증</string>
+    <string name="back_startpage">처음으로 돌아가기</string>
+    <string name="findaccount_guide">본인 확인을 위해 인증을 진행해 주세요.</string>
+    <string name="findaccount_putname">이름 입력 : 영어 / 한글만</string>
+    <string name="findaccount_putbirth">법적생년월일8자리</string>
+    <string name="findaccount_putnum">번호 입력</string>
+    <string name="findaccount_putid">아이디 입력</string>
+    <string name="findId">아이디 찾기</string>
+    <string name="findPw">비밀번호 찾기</string>
+    <string name="beverageOrder">음료 주문</string>
+    <string name="backBtn">뒤로가기</string>
+    <string name="print_receipt">영수증 출력</string>
+    <string name="cancel_order">주문취소</string>
+    <string name="go_order">결제 및 주문</string>
+    <string name="check_order">주문/결제에 동의합니다</string>
+    <string name="print">출력</string>
+    <string name="popupWindow_count">개수는 1개 이상만 설정 가능합니다.</string>
+    <string name="signup_guide_head">회원님의 소중한 정보를 입력해 주세요.</string>
+    <string name="signup_guide_body">아이디, 비밀번호, 이메일을 입력해 주세요. 마케팅 정보 수신 항목에 동의하시면 다양한 이벤트, 신상품 등 여러 정보를 보내드립니다. 항목에 동의하지 않아도 서비스 가입 및 이용 가능합니다.</string>
+    <string name="insertInfo">정보 입력</string>
+
+    <string name="check_pw">비밀번호 확인</string>
+    <string name="re_pw">비밀번호 재입력</string>
+    <string name="put_email">이메일 입력</string>
+    <string name="ok">확인</string>
+    <string name="start_hotmenu">이디야 인기 메뉴</string>
+    <string name="start_newmenu">이디야 신메뉴</string>
+    <string name="start_order">주문 시작하기</string>
+    <string name="topping_chocolate">초콜릿 칩</string>
+    <string name="topping_cream">휘핑크림</string>
+    <string name="topping_pull">타피오카 펄</string>
+    <string name="topping_shirup">시럽</string>
+    <string name="order_history">주문 내역</string>
+    <string name="idCheck">중복 확인</string>
+
+    <string name="successSignup">회원가입에 성공하였습니다.</string>
+    <string name="id">아이디</string>
+    <string name="pw">비밀번호</string>
+    <string name="email">이메일</string>
+    <string name="name">이름</string>
+    <string name="number">전화번호</string>
+
+    <string name="inputOnlyNumber">숫자만 입력하세요</string>
+    <string name="checkMessage">를 확인해 주세요</string>
+
+    <string name="correctPw">비밀번호가 일치합니다</string>
+    <string name="unCorrectPw">비밀번호가 일치하지 않습니다</string>
+    <string name="pwCheckMessage">비밀번호와 동일하게 입력하세요</string>
+    <string name="inputPw">비밀번호를 입력해 주세요</string>
+    <string name="usablePw">비밀번호 사용 가능</string>
+    <string name="unUsablePw">비밀번호 사용 불가능</string>
+    <string name="pwCount">비밀번호는 5자리 이상</string>
+    <string name="pwGuide">비밀번호는 5자리 이상, 영어만 사용 가능</string>
+
+    <string name="usableId">이 아이디는 사용 가능합니다.</string>
+    <string name="unUsableId">이 아이디는 사용 불가능합니다.</string>
+    <string name="inputID">아이디를 입력해 주세요</string>
+
+    <string name="loginSuccess">로그인에 성공했습니다</string>
+    <string name="loginFail">로그인에 실패했습니다.</string>
+
+    <string name="putAllInfo">형식에 맞게 정보를 입력해주세요.</string>
+    <string name="putKey">인증번호를 입력해 주세요</string>
+    <string name="wrongKey">인증번호가 일치하지 않습니다.</string>
+    <string name="rightKey">인증에 성공했습니다.</string>
+
+    <string name="grade">님의 등급은</string>
+    <string name="basketHistory">최근 고객님의 주문 내역입니다.</string>
+    <string name="history">주문내역</string>
+
+</resources>

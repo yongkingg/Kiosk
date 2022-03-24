@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kiosk">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".Activity.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="EDIYA"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Kiosk">
+        <activity
+            android:name=".Activity.LoginPage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.StartPage"/>
+        <activity android:name="com.example.kiosk.Activity.BeverageOrderPage"></activity>
+        <activity android:name="com.example.kiosk.Activity.UserPage"></activity>
+s        <activity android:name="com.example.kiosk.Activity.BeverageSetPage"></activity>
+        <activity android:name="com.example.kiosk.Activity.PayPage"></activity>
+        <activity android:name="com.example.kiosk.Activity.SignUpPage"></activity>
+        <activity android:name="com.example.kiosk.Activity.BasketPage"></activity>
+        <activity android:name="com.example.kiosk.Activity.FindAccountPage"></activity>
+        <activity android:name="com.example.kiosk.Activity.OrderHistoryPage"></activity>
+        <service android:name="com.example.kiosk.Service.BoundService"></service>
+        <service android:name=".Service.ForegroundService"></service>
+        <service android:name=".Service.KeyService"></service>
+    </application>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+</manifest>
